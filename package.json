@@ -1,0 +1,24 @@
+{
+  "name": "carellacomingsoon",
+  "version": "0.0.1",
+  "description": "carella collections coming soon page",
+  "main": "serv.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1",
+    "mincss": "echo '=====> minify cs.css <======\n' && cleancss cs.css -o cs.min.css",
+    "minjs": "echo '=====> minify cs.js <======\n' && uglifyjs js/cs.js -o js/cs.min.js --verbose --timings",
+    "lintjs": "echo '=====> linting JS <======\n' && jshint *.js",
+    "min": "echo '=====> minify all the things <======\n' && npm run mincss && npm run minjs",
+    "open": "echo '=====> build, Start HTTP server & Opening in Browser <======\n' && npm run min && sleep 3 && http-server ./ -p 1337 -oU -c-1"
+  },
+  "author": "nathanbuckley",
+  "license": "ISC",
+  "dependencies": {
+    "tingle.js": "^0.13.2"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^4.2.1",
+    "jshint": "^2.9.6",
+    "uglify-js": "^3.4.9"
+  }
+}
