@@ -17,7 +17,7 @@ body {
     background-color: #36384c;
     background-image: url('./back/zen.jpg');
     background-size: cover;
-    filter: grayscale(70%) blur(0.5px);
+    filter: grayscale(75%) blur(0.5px);
 }
 
 a {
@@ -61,23 +61,25 @@ a:hover {
 
 #comingsoon a .char {
     animation: slide-in 3s cubic-bezier(0, 0.75, 0, 1) 0s both, will-change 3s linear;
-    animation-delay: calc(0.8s * var(--char-percent));
+    animation-delay: 1.5s;
     opacity: 0.99;
-  }
-  @keyframes slide-in {
+}
+  
+@keyframes slide-in {
     0% {
-      opacity: 0;
-      transform: translateX(200%) scaleX(0.5);
+        opacity: 0;
+        transform: translateX(200%) scaleX(0.5);
     }
-  }
-  @keyframes will-change {
+}
+  
+@keyframes will-change {
     0% {
-      will-change: transform;
+        will-change: transform;
     }
     100% {
-      will-change: auto;
+        will-change: auto;
     }
-  }
+}
 
 #blurb {
     grid-column: 2 / span 3;
