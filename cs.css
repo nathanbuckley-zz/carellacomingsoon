@@ -87,7 +87,7 @@ a:hover {
     align-self: end;
     opacity: 0.7;
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     color: white;
     z-index: 100;
@@ -110,7 +110,6 @@ a:hover {
     padding: 1em 1.5em;
     font-family: 'Unica One', cursive;
     text-transform: uppercase;
-    font-size: 18px;
     margin: 10px;
     -webkit-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
@@ -137,14 +136,30 @@ a:hover {
     font-size: 40px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 2560px) {
 
     #comingsoon {
-        font-size: 100px;
+        font-size: 120px;
+        margin-bottom: -6%;
     }
 
     #blurb {
+        grid-column: 3 / span 1;
         font-size: 22px;
+        margin-bottom: -3%;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    #comingsoon {
+        font-size: 70px;
+        margin-bottom: 5%;
+    }
+
+    #blurb {
+        font-size: 13px;
+        margin-bottom: -1%;
     }
 }
 
@@ -153,6 +168,18 @@ a:hover {
     #social {
         grid-column: 3 / span 1;
         justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    #blurb {
+        font-size: 11px;
+    }
+
+    #comingsoon {
+        font-size: 65px;
+        margin-bottom: 9%;
     }
 }
 
@@ -165,8 +192,22 @@ a:hover {
 
 @media only screen and (max-width: 815px) {
 
+    #comingsoon {
+        font-size: 60px;
+        margin-bottom: 12%;
+    }
+
     #blurb {
-        font-size: 15px;
+        font-size: 9px;
+    }
+
+    .ctabutts {
+        font-size: 11px;
+    }
+
+    #social a {
+        margin: 7px;
+        font-size: 30px;
     }
 }
 
@@ -193,6 +234,7 @@ a:hover {
 
     #comingsoon {
         font-size: 40px;
+        margin-bottom: -10%;
     }
 
     #blurb {
@@ -201,5 +243,21 @@ a:hover {
     
     .ctabutts {
         font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    #comingsoon {
+        margin-bottom: -10%;
+    }
+
+    .ctabutts {
+        font-size: 8px;
+    }
+
+    #social a {
+        margin: 7px;
+        font-size: 30px;
     }
 }
