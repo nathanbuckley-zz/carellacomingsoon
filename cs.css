@@ -188,3 +188,18 @@ a:hover {
         font-size: 11px;
     }
 }
+
+@media only screen and (max-width: 425px) {
+
+    #comingsoon {
+        font-size: 40px;
+    }
+
+    #blurb {
+        visibility: hidden;
+    }
+    
+    .ctabutts {
+        font-size: 9px;
+    }
+}
