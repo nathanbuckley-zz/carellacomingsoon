@@ -5,9 +5,10 @@
   "main": "serv.js",
   "scripts": {
     "test": "echo \"No test specified\" && exit 1",
-    "mincss": "echo '=====> minify cs.css <======\n' && cleancss cs.css -o cs.min.css",
+    "mincss": "echo '=====> minify cs.css <======\n' && cleancss css/cs.css -o css/cs.min.css",
+    "mintingle": "echo '=====> minify tingle<======\n' && cleancss css/tingle.css -o css/tingle.min.css && uglifyjs js/tingle.js -o js/tingle.min.js --verbose --timings",
     "minjs": "echo '=====> minify cs.js <======\n' && uglifyjs js/cs.js -o js/cs.min.js --verbose --timings",
-    "lintjs": "echo '=====> linting JS <======\n' && jshint *.js",
+    "lintjs": "echo '=====> linting JS <======\n' && jshint js/cs.js",
     "min": "echo '=====> minify all the things <======\n' && npm run mincss && npm run minjs",
     "open": "echo '=====> build, Start HTTP server & Opening in Browser <======\n' && npm run min && sleep 3 && http-server ./ -p 1337 -oU -c-1"
   },

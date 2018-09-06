@@ -15,7 +15,7 @@ body {
     grid-column: 1 / span 5;
     grid-row: 1 / span 6;
     background-color: #36384c;
-    background-image: url('./back/zen.jpg');
+    background-image: url('../back/zen.jpg');
     background-size: cover;
     filter: grayscale(75%) blur(0.5px);
 }
@@ -136,6 +136,26 @@ a:hover {
     font-size: 40px;
 }
 
+.tingle-modal h1 {
+    font-family: 'Unica One', cursive;
+    text-align: center;
+}
+
+.tingle-modal p {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.tingle-modal input {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.tingle-modal #socialnotify {
+    text-align: center;
+    color: #D89000;
+}
+
 @media only screen and (min-width: 2560px) {
 
     #comingsoon {
@@ -186,7 +206,7 @@ a:hover {
 @media only screen and (max-width: 978px) {
 
     #background {
-        background-image: url('./back/frida.jpg');
+        background-image: url('../back/frida.jpg');
     }
 }
 
