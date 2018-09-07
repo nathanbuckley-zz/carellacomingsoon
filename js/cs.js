@@ -19,7 +19,7 @@ var notifymodal = new tingle.modal({
 // notify modal content
 
 var content = 
-'<h1>Carella Creation</h1>'+
+'<h1>CARELLA CREATION</h1>'+
 '<p>Join Our Mailing list or follow us on social media to stay up to date with all the latest'+
 ' news, products, announcements and more.</p>'+
 '<form id="form" action="https://formspree.io/nth.buckley@gmail.com" method="POST">'+
