@@ -148,12 +148,47 @@ a:hover {
 
 .tingle-modal input {
     font-family: 'Open Sans', sans-serif;
-    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 2px solid #36384c;
+    background: transparent;
+    margin-bottom: 10px;
+    height: 45px;
+    resize:none;
+    overflow: hidden;
 }
 
-.tingle-modal #socialnotify {
+.tingle-modal #fsub input{
+    width: 100%;
+    border: none;
     text-align: center;
+    background-color: #D89000;
+    color: white;
+    cursor: pointer;
+    margin-top: 5%;
+}
+
+.tingle-modal #fsub input:hover{
+    background-color: #cb4e4e;
+}
+
+.tingle-modal a {
+    font-size: 200%;
     color: #D89000;
+    cursor: pointer;
+    margin: 1%;
+
+}
+
+.tingle-modal a:hover {
+    font-size: 210%;
+    color: #cb4e4e;
 }
 
 @media only screen and (min-width: 2560px) {

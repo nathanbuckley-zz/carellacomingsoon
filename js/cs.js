@@ -20,7 +20,7 @@ var notifymodal = new tingle.modal({
 
 var content = 
 '<h1>CARELLA CREATION</h1>'+
-'<p>Join Our Mailing list or follow us on social media to stay up to date with all the latest'+
+'<p>Join our mailing list or follow us on social media to stay up to date with all the latest'+
 ' news, products, announcements and more.</p>'+
 '<form id="form" action="https://formspree.io/nth.buckley@gmail.com" method="POST">'+
 '<input type="text" id="fname" name="name" placeholder="Name"/>'+
@@ -30,7 +30,7 @@ var content =
 '<input type="text" name="_gotcha" style="display:none"/>'+
 '<div id="fsub"><input type="submit" value="Submit"></div>'+
 '</form>'+
-'<div id="socialnotify">'+
+'<div>'+
 '<a href="https://www.instagram.com/carellacreation" target="_blank"><i class="fab fa-instagram"></i></a>'+
 '<a href="https://www.facebook.com/carellacreation" target="_blank"><i class="fab fa-facebook"></i></a>'+
 '<a href="http://www.pinterest.com/carellacreation" target="_blank"><i class="fab fa-pinterest-square"></i></a>'+
